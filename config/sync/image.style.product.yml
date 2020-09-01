@@ -1,0 +1,22 @@
+uuid: 42d4149c-b960-4651-85ae-4552320b77db
+langcode: en
+status: true
+dependencies: {  }
+name: product
+label: Product
+effects:
+  f09e1c4d-8112-41e6-8832-827fb1958cf5:
+    uuid: f09e1c4d-8112-41e6-8832-827fb1958cf5
+    id: image_resize
+    weight: 1
+    data:
+      width: 800
+      height: 600
+  59f30aed-234e-4f41-8834-4a86df8350cb:
+    uuid: 59f30aed-234e-4f41-8834-4a86df8350cb
+    id: image_scale
+    weight: 2
+    data:
+      width: 400
+      height: 300
+      upscale: true

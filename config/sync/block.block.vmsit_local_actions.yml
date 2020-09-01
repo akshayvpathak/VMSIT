@@ -1,0 +1,20 @@
+uuid: 1da7d153-51d6-4bf7-99d9-4b358ff0db24
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vmsit
+_core:
+  default_config_hash: EAlCAHiVy5x3aTOW2K9XaWE4kelyfSSSKv8_uiomGJM
+id: vmsit_local_actions
+theme: vmsit
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

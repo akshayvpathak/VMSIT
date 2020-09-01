@@ -1,0 +1,21 @@
+uuid: 3ec762a7-e551-476f-a333-f3018acee66d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.rice
+    - field.storage.commerce_product.field_unit
+  module:
+    - physical
+id: commerce_product.rice.field_unit
+field_name: field_unit
+entity_type: commerce_product
+bundle: rice
+label: Unit
+description: 'Choose the Unit Of the Product.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: physical_measurement

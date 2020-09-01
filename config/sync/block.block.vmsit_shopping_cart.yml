@@ -1,0 +1,24 @@
+uuid: e8ceb4f4-19f6-409b-905e-6d88b91902b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - vmsit
+_core:
+  default_config_hash: orSxR8gn7umdR1c6gwf974l_423iO55PL0tkHpOWRhw
+id: vmsit_shopping_cart
+theme: vmsit
+region: top_header
+weight: -5
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }
