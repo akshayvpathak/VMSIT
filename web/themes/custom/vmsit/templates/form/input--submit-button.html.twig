@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+{% if attributes['class']['0'] == 'button--add-to-cart' %}
+<button class="btn button--primary button--add-to-cart button js-form-submit form-submit" id="{{ attributes['id']}}" value="{{ attributes['value']}}" name ="{{ attributes['name']}}" type = "{{ attributes['type']}}" data-drupal-selector="{{ attributes['data-drupal-selector'] }}">{{ safe_value_label | raw }}</button>{{ children }}
+{% else %}
+<button {{ attributes }}>{{ safe_value_label | raw }}</button>{{ children }}
+{% endif %}

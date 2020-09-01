@@ -1,0 +1,139 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+ .button--add-to-cart,.button--add-to-cart:hover,.button--add-to-cart:focus{
+    background-color: rgb(233,97,37);
+    border-color: rgb(233,97,37);
+    border-radius: 3px;
+    height: 40px;
+    color:white;
+    justify-content: center;
+    text-justify: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 16px ;
+    padding-left: 16px;;
+  }
+  
+ .product-title {
+    color: #333;
+    font-size:18px;
+    font-weight: 600;
+    line-height: normal;
+    font-family: Celias;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.product_label .field__label
+{
+    font-weight: 600;
+    color : #333;
+    margin-bottom : 8px;
+    padding-top: 10px;
+    padding-right: 8px;
+
+}
+.product_label .field__item
+{    
+    color: #999;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    padding-right: 8px;
+}
+.product_label a{
+    color: #e96125;
+    font-size: 18px;
+    font-weight: 700;
+}
+.offer_price{
+    background-color: #51aa1b;
+    border-radius: 3px;
+    border: 2px solid #51aa1b;
+    color: #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;;
+    width: fit-content;
+}
+.product_mrp{
+    display: inline;
+    color: #999;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px
+}
+.selling_mrp{
+    font-size: 20px;
+    color: #333;
+}
+.final_price{
+    display: inline;
+    font-weight: 600;
+    font-size: 26px;
+}
+.selling_mrp .field__item,.product_mrp .field__item{
+    display: inline;
+}
+.available_label .field__item{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    padding-right: 8px;
+
+}
+.available_label .custom-select{
+    color: #e96125;
+    display: block;
+    border: 1px solid #e96125;
+    width: fit-content;
+}
+.available_label select:active,.available_label select:hover {
+    outline-color: #e96125;
+  }
+  .available_label select:focus{
+    border-color: #e96125;
+    outline:none;
+  }
+  .available_label select option {
+    background: #fff; 
+    color: #e96125; 
+    box-shadow: inset 20px 20px #fff
+  } 
+  
+  .available_label select option:hover{
+    color: #fff; 
+    box-shadow: inset 20px 20px #e96125;
+  }
+  .promis img{
+      height:34px;
+  }
+.promise_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #37a3be;
+}
+.promise_text{
+    line-height: normal;
+    color: #333;
+    font-weight: 600;
+}
+promise_header {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+#block-searchform{
+width :100%;
+height:100%;
+}
+#search-block-form{
+    display: inline-block;
+}

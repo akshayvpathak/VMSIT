@@ -1,0 +1,100 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('belgrade/commerce.product-images') }}
+{%
+  set classes = [
+  'commerce-product',
+  'commerce-product--' ~ product_entity.bundle|clean_class,
+  'commerce-product--full',
+]
+%}
+<article{{ attributes.addClass(classes) }}>
+  <div class="row">
+    <div class="col-md-6">
+      {{- product.field_images -}}
+    </div>
+    <div class="col-md-6">
+    <div class="offer_price">
+    {{- product.variation_field_discount_percentage -}}
+    </div>
+    
+      <div class="product-title">
+        {{- product.title -}}
+      </div>
+      <div class="product_mrp">
+      Product MRP:
+      <del>{{- product.variation_field_old_price -}}</del>
+      </div>
+      <div class="selling_mrp">
+      Selling Price : <div class="final_price">{{- product.variation_price -}}</div>
+      </div>
+      <p>(inclusive of all taxes)</p>
+      <div class="available_label">
+      {{- product.variations -}}
+      </div>
+      
+    </div>
+  </div>
+  <div class="row product_label">
+      <div class="col-md-6">
+        <h6>Product Details</h6>
+        {{- product.field_key_features -}}
+        <center>
+        <a class="viewmore" role="button">View More ↓</a>
+        </center>
+        <div class= "productfeatures">
+        {{- product|without('field_images','variation_field_old_price','field_key_features','variations','field_image','variation_attributes','variation_price','variation_field_image','variation_title','variation_field_discount_percentage') -}}
+        </div>
+        <center>
+        <a class="viewless" role="button">
+        View Less ↑
+        </a>  
+        </center>
+      </div>
+      <div class="col-md-6 promis">
+      <div class="promis_header">
+      Why shop from Us?
+      </div>
+        <div class="row">
+          <div class="col-1">
+          <img src="../../themes/custom/vmsit/images/image1.webp" />
+          </div>
+          <div class="col-11 promise_title">
+          Easy returns & refunds<p class="promise_text">
+          Return products at doorstep and get refund in seconds.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+          <img src="../../themes/custom/vmsit/images/image2.webp" />
+          </div>
+          <div class="col-11 promise_title">
+          Lowest price guaranteed
+          <p class="promise_text">Get difference refunded if you find it cheaper anywhere else.</p>
+          </div>
+        </div>
+      </div>
+        
+  </div>
+  
+</article>
+
