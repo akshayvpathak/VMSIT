@@ -19,6 +19,11 @@ jQuery(document).ready(hideelement);
   {
     jQuery(".viewless").hide();
     jQuery(".productfeatures").hide(1000);
+
+    if(window.matchMedia("(max-width: 767px)").matches)
+    {
+      jQuery(".button--add-to-cart").html("ADD");
+    } 
   };
   jQuery(".viewmore").click(function(){
     jQuery(".productfeatures").show(1000);
