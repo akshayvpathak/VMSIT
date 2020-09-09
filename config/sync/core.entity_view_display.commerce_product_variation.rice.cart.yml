@@ -1,56 +1,40 @@
-uuid: 5a777619-baad-4a4e-b1d3-00f0d28814c1
+uuid: ced71f81-d555-4342-9d56-0a5355e93c07
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.rice
+    - core.entity_view_mode.commerce_product_variation.cart
     - field.field.commerce_product_variation.rice.attribute_weight
     - field.field.commerce_product_variation.rice.field_discount_percentage
     - field.field.commerce_product_variation.rice.field_image
     - field.field.commerce_product_variation.rice.field_old_price
     - field.field.commerce_product_variation.rice.field_weight
-    - image.style.product_teaser
+    - image.style.thumbnail
   module:
     - commerce_price
     - image
-    - text
-id: commerce_product_variation.rice.default
+id: commerce_product_variation.rice.cart
 targetEntityType: commerce_product_variation
 bundle: rice
-mode: default
+mode: cart
 content:
   attribute_weight:
     type: entity_reference_label
-    weight: 0
+    weight: 2
     region: content
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-  field_discount_percentage:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_image:
-    weight: 4
-    label: hidden
-    settings:
-      image_style: product_teaser
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_old_price:
     weight: 1
     label: hidden
     settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
+      image_style: thumbnail
+      image_link: ''
     third_party_settings: {  }
-    type: commerce_price_default
+    type: image
     region: content
   price:
     label: hidden
@@ -61,11 +45,20 @@ content:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   commerce_variation_cart_form: true
+  field_discount_percentage: true
+  field_old_price: true
   field_weight: true
   list_price: true
   product_id: true
   search_api_excerpt: true
   sku: true
-  title: true

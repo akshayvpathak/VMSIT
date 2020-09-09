@@ -1,0 +1,14 @@
+uuid: edeafdae-06ec-4d78-b13a-8677fef2eb55
+langcode: en
+status: true
+dependencies: {  }
+name: product_teaser
+label: 'Product teaser'
+effects:
+  c6fd8ded-34aa-4f0d-be40-ecb9aeb2ca81:
+    uuid: c6fd8ded-34aa-4f0d-be40-ecb9aeb2ca81
+    id: image_resize
+    weight: 1
+    data:
+      width: 140
+      height: 140

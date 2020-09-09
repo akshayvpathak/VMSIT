@@ -1,82 +1,86 @@
-uuid: 571f3553-7ed7-4865-a2d8-1de7aac7124e
+uuid: f697f96f-4f13-4857-81a9-41b3dc03ff9a
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.rice
+    - core.entity_view_mode.commerce_product_variation.views_categories
     - field.field.commerce_product_variation.rice.attribute_weight
     - field.field.commerce_product_variation.rice.field_discount_percentage
     - field.field.commerce_product_variation.rice.field_image
     - field.field.commerce_product_variation.rice.field_old_price
     - field.field.commerce_product_variation.rice.field_weight
-    - image.style.thumbnail
+    - image.style.product_teaser
   module:
     - commerce_price
+    - commerce_variation_cart_form
     - image
     - text
-id: commerce_product_variation.rice.default
+third_party_settings:
+  commerce_variation_cart_form:
+    combine: 0
+id: commerce_product_variation.rice.views_categories
 targetEntityType: commerce_product_variation
 bundle: rice
-mode: default
+mode: views_categories
 content:
-  attribute_weight:
-    type: options_select
-    weight: 0
+  commerce_variation_cart_form:
+    weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_discount_percentage:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 0
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: text_textfield
+    type: text_default
     region: content
   field_image:
     weight: 1
+    label: hidden
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      image_style: product_teaser
+      image_link: ''
     third_party_settings: {  }
-    type: image_image
+    type: image
     region: content
   field_old_price:
     weight: 2
-    settings: {  }
+    label: hidden
+    settings:
+      strip_trailing_zeroes: true
+      currency_display: symbol
     third_party_settings: {  }
     type: commerce_price_default
     region: content
   field_weight:
-    weight: 7
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
-  price:
-    type: commerce_price_default
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  sku:
-    type: string_textfield
+    type: text_default
     weight: 5
     region: content
-    settings:
-      size: 60
-      placeholder: ''
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 6
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 3
     region: content
+    settings:
+      strip_trailing_zeroes: true
+      currency_display: symbol
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
-  created: true
+  attribute_weight: true
   list_price: true
-  uid: true
+  product_id: true
+  search_api_excerpt: true
+  sku: true

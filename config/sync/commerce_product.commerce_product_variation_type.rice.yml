@@ -5,6 +5,6 @@ dependencies: {  }
 id: rice
 label: Rice
 orderItemType: default
-generateTitle: true
+generateTitle: false
 traits: {  }
 locked: false

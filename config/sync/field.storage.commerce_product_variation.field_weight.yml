@@ -1,0 +1,20 @@
+uuid: 6d071390-4d31-4a14-af79-2723a1823aee
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product_variation.field_weight
+field_name: field_weight
+entity_type: commerce_product_variation
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
