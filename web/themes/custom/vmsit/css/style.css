@@ -197,6 +197,35 @@ promise_header {
     padding-left: 16px;
     margin-bottom: 2px;
   }
+  .facet-item a, .facet-item a:hover ,.facet-item a:focus,.facet-item a:visited {
+      color: #666666;
+      font-size: 18px;
+      text-decoration: none solid rgb(102,102,102);
+      font-weight: 600;
+      text-transform: capitalize;
+      background-color: #fff;
+  }
+  .block-facets ul ul li {
+    margin: 0 0 0 56px;
+    padding: 14px 14px 14px 0;
+  }
+  .block-facets ul li{
+    margin: 0 0 0 14px;
+    padding: 14px 14px 14px 0;
+  }
+  .block-facets{
+      border-left: 1px solid #eeeeee;
+      border-right: 1px solid #eeeeee;
+  }
+  .block-facets ul li,.block-facets ul ul li{
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+  }
+  .block-facets .content{
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+  }
+
   @media screen and (max-width: 550px){
       .variation_block img{
           height: 90px;

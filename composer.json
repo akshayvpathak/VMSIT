@@ -29,6 +29,7 @@
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/ctools": "^3.4",
+        "drupal/facets": "^1.5",
         "drupal/pathauto": "^1.8",
         "drupal/physical": "^1.1",
         "drupal/search_api": "^1.17",
