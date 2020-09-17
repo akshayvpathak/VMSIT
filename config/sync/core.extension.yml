@@ -12,6 +12,7 @@ module:
   ckeditor: 0
   color: 0
   colorbox: 0
+  colors: 0
   comment: 0
   commerce: 0
   commerce_cart: 0
@@ -38,10 +39,15 @@ module:
   editor: 0
   entity: 0
   entity_reference_revisions: 0
+  facets: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  fullcalendar: 0
+  fullcalendar_colors: 0
+  fullcalendar_legend: 0
+  fullcalendar_options: 0
   help: 0
   history: 0
   image: 0
@@ -81,6 +87,7 @@ module:
   update: 0
   user: 0
   views_autocomplete_filters: 0
+  views_bootstrap: 0
   views_ui: 0
   viewsreference: 0
   pathauto: 1

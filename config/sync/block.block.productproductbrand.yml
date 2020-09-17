@@ -1,0 +1,23 @@
+uuid: 197cb1f2-950a-4069-b7da-5c34d70dbc13
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.product_product_brand
+  module:
+    - facets
+  theme:
+    - vmsit
+id: productproductbrand
+theme: vmsit
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'facet_block:product_product_brand'
+settings:
+  id: 'facet_block:product_product_brand'
+  label: Brand
+  provider: facets
+  label_display: visible
+  block_id: productproductbrand
+visibility: {  }
