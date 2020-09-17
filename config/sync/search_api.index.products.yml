@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.commerce_product.field_brand
     - field.storage.commerce_product.field_categories
     - search_api.server.products
   module:
@@ -13,6 +14,16 @@ name: Products
 description: 'this the Product index Provided by Drupal.'
 read_only: false
 field_settings:
+  field_brand:
+    label: 'Product » Product » Brand'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:field_brand'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+      module:
+        - commerce_product
   field_categories:
     label: 'Product » Product » Categories'
     datasource_id: 'entity:commerce_product_variation'

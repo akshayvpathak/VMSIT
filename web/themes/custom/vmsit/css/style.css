@@ -197,7 +197,7 @@ promise_header {
     padding-left: 16px;
     margin-bottom: 2px;
   }
-  .facet-item a, .facet-item a:hover ,.facet-item a:focus,.facet-item a:visited {
+ #block-categoriesforfacet .facet-item a,#block-categoriesforfacet .facet-item a:hover ,#block-categoriesforfacet .facet-item a:focus,#block-categoriesforfacet .facet-item a:visited {
       color: #666666;
       font-size: 18px;
       text-decoration: none solid rgb(102,102,102);
@@ -205,27 +205,55 @@ promise_header {
       text-transform: capitalize;
       background-color: #fff;
   }
-  .block-facets ul ul li {
+  #block-categoriesforfacet ul ul li {
     margin: 0 0 0 56px;
     padding: 14px 14px 14px 0;
   }
-  .block-facets ul li{
+  #block-categoriesforfacet ul li{
     margin: 0 0 0 14px;
     padding: 14px 14px 14px 0;
   }
-  .block-facets{
+  #block-categoriesforfacet{
       border-left: 1px solid #eeeeee;
       border-right: 1px solid #eeeeee;
   }
-  .block-facets ul li,.block-facets ul ul li{
+  #block-categoriesforfacet ul li,#block-categoriesforfacet ul ul li{
       border-top: 1px solid #eeeeee;
       border-bottom: 1px solid #eeeeee;
   }
-  .block-facets .content{
+  #block-categoriesforfacet{
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
   }
-
+.footer{
+    font-weight: 200;
+    background-color:  #ffffff;
+}
+.footer .categories,.footer .brand{
+    font-size: 16px;
+    line-height: 2;
+}
+.footer .categories ul{
+    column-count: 3;
+}
+.footer .categories a,.footer .categories a:hover,.footer .categories a:focus,.footer .categories a:visited{
+    color: #666666;
+    text-decoration: none;
+}
+.footer .brand a,.footer .brand a:hover,.footer .brand a:focus,.footer .brand a:visited{
+    color: #666666;
+    text-decoration: none;
+}
+#block-footerblock,#block-productproductbrand{
+    width: 100%;
+    border-right: 1px solid  #EEEEEE;
+    border-bottom: 1px solid  #EEEEEE;
+}
+#block-footerblock h2,#block-productproductbrand h2{
+font-size: 18px;
+font-weight: 400;
+color: #666666;
+}
   @media screen and (max-width: 550px){
       .variation_block img{
           height: 90px;

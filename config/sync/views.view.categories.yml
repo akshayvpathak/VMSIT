@@ -8,6 +8,7 @@ dependencies:
   module:
     - image
     - search_api
+    - views_bootstrap
 id: categories
 label: Categories
 module: views
@@ -63,16 +64,16 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: grid
+        type: views_bootstrap_grid
         options:
+          row_class: row
+          default_row_class: true
           uses_fields: false
-          columns: 4
-          automatic_width: false
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: 'col-6 col-sm-6 col-lg-3 col-md-3'
-          row_class_default: true
-          row_class_custom: row
+          col_xs: col-6
+          col_sm: col-sm-4
+          col_md: col-md-4
+          col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: search_api
         options:
@@ -160,13 +161,19 @@ display:
       footer: {  }
       empty: {  }
       relationships: {  }
-      arguments: {  }
+      arguments:
+        field_categories:
+          id: field_categories
+          table: search_api_index_products
+          field: field_categories
+          plugin_id: search_api_term
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
       tags:
         - 'config:field.storage.commerce_product_variation.field_image'
@@ -188,6 +195,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
       tags:
         - 'config:field.storage.commerce_product_variation.field_image'

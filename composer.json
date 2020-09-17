@@ -23,6 +23,7 @@
         "drupal/belgrade": "^1.0@beta",
         "drupal/bootstrap_barrio": "^5.1",
         "drupal/colorbox": "^1.6",
+        "drupal/colors": "^1.0@beta",
         "drupal/commerce": "^2.20",
         "drupal/commerce_variation_cart_form": "^1.2",
         "drupal/console": "^1.0.2",

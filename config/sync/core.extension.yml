@@ -11,6 +11,7 @@ module:
   ckeditor: 0
   color: 0
   colorbox: 0
+  colors: 0
   comment: 0
   commerce: 0
   commerce_cart: 0
@@ -42,6 +43,10 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  fullcalendar: 0
+  fullcalendar_colors: 0
+  fullcalendar_legend: 0
+  fullcalendar_options: 0
   help: 0
   history: 0
   image: 0
