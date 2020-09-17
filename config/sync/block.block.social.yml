@@ -1,4 +1,4 @@
-uuid: 248645ff-05b7-4481-9d0e-6987319fed10
+uuid: 227a5578-0a2e-4512-a33d-147d405e1a55
 langcode: en
 status: true
 dependencies:
@@ -8,12 +8,10 @@ dependencies:
     - system
   theme:
     - vmsit
-_core:
-  default_config_hash: CB3dmNJAl-l-FXg6eF2UXlZ6w5eYVZGiw3MGVvJ5V-E
-id: vmsit_social
+id: social
 theme: vmsit
-region: top_header
-weight: -4
+region: featured_bottom_third
+weight: 0
 provider: null
 plugin: 'system_menu_block:social'
 settings:

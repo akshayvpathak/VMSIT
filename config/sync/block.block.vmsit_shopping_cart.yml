@@ -1,6 +1,6 @@
 uuid: e8ceb4f4-19f6-409b-905e-6d88b91902b3
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - commerce_cart
@@ -10,8 +10,8 @@ _core:
   default_config_hash: orSxR8gn7umdR1c6gwf974l_423iO55PL0tkHpOWRhw
 id: vmsit_shopping_cart
 theme: vmsit
-region: top_header
-weight: -5
+region: top_header_right
+weight: -4
 provider: null
 plugin: commerce_cart
 settings:

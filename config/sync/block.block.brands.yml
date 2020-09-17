@@ -1,0 +1,25 @@
+uuid: 1f1d0f7f-893e-4a9d-869d-307b83b386fb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8aa455ff-146f-4c2d-aee4-3d3233bd87f2'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: brands
+theme: vmsit
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:8aa455ff-146f-4c2d-aee4-3d3233bd87f2'
+settings:
+  id: 'block_content:8aa455ff-146f-4c2d-aee4-3d3233bd87f2'
+  label: Brands
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

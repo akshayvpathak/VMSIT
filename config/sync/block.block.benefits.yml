@@ -1,0 +1,25 @@
+uuid: 151c2b48-0012-400a-a746-435219eefc9c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b8d26e3d-2fce-4c7c-a253-c3281893d8dd'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: benefits
+theme: vmsit
+region: featured_bottom
+weight: -6
+provider: null
+plugin: 'block_content:b8d26e3d-2fce-4c7c-a253-c3281893d8dd'
+settings:
+  id: 'block_content:b8d26e3d-2fce-4c7c-a253-c3281893d8dd'
+  label: benefits
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

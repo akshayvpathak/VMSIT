@@ -1,0 +1,19 @@
+uuid: 7bcab80d-720d-4412-8683-c0cffea8ae8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_class
+    - paragraphs.paragraphs_type.view_reference
+id: paragraph.view_reference.field_extra_class
+field_name: field_extra_class
+entity_type: paragraph
+bundle: view_reference
+label: 'Extra class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -143,3 +143,7 @@ To prevent this you can add this code to specify the PHP version you want to use
     }
 },
 ```
+
+
+
+HardWorks-MacBook-Pro:VMSIT hardwork$ sudo scp -i ~/Downloads/vmsit-non-it-business.pem ubuntu@52.66.214.166:~/docker-compose-lamp/www/VMSIT/drupaldatabase.sql   .

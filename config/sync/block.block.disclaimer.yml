@@ -1,0 +1,25 @@
+uuid: 97ee7efe-9eef-420b-80b6-620ce3830e04
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8c91c59a-1051-45a7-a967-32d10c5bf444'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: disclaimer
+theme: vmsit
+region: featured_bottom
+weight: -7
+provider: null
+plugin: 'block_content:8c91c59a-1051-45a7-a967-32d10c5bf444'
+settings:
+  id: 'block_content:8c91c59a-1051-45a7-a967-32d10c5bf444'
+  label: disclaimer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
