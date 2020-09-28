@@ -1,0 +1,10 @@
+uuid: 9484668c-88ed-4b1b-93c3-77c0eca05bba
+langcode: en
+status: true
+dependencies: {  }
+id: rice
+label: Rice
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

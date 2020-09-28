@@ -1,0 +1,20 @@
+uuid: 10413e49-3246-442e-9864-d769b2833d65
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_slick_images_categories
+field_name: field_slick_images_categories
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

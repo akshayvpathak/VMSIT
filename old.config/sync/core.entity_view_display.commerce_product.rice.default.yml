@@ -1,0 +1,161 @@
+uuid: 58f22814-b3d3-439d-977d-6aaa4b780222
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.rice
+    - field.field.commerce_product.rice.body
+    - field.field.commerce_product.rice.field_brand
+    - field.field.commerce_product.rice.field_categories
+    - field.field.commerce_product.rice.field_description
+    - field.field.commerce_product.rice.field_disclaimer
+    - field.field.commerce_product.rice.field_images
+    - field.field.commerce_product.rice.field_key_features
+    - field.field.commerce_product.rice.field_marketed_by
+    - field.field.commerce_product.rice.field_s
+    - field.field.commerce_product.rice.field_seller
+    - field.field.commerce_product.rice.field_unit
+    - image.style.product
+  module:
+    - commerce_product
+    - physical
+    - slick
+    - text
+id: commerce_product.rice.default
+targetEntityType: commerce_product
+bundle: rice
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_description:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disclaimer:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_images:
+    weight: 10
+    label: above
+    settings:
+      style: column
+      optionset: default
+      optionset_thumbnail: ''
+      skin: classic
+      skin_thumbnail: ''
+      image_style: product
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: colorbox
+      background: true
+      box_style: product
+      thumbnail_style: ''
+      ratio: ''
+      box_caption: ''
+      box_caption_custom: ''
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      layout: ''
+      thumbnail_caption: ''
+      cache: 0
+      override: true
+      overridables:
+        arrows: arrows
+        autoplay: autoplay
+        dots: dots
+        infinite: infinite
+        draggable: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      current_view_mode: default
+      caption:
+        title: '0'
+        alt: '0'
+      preserve_keys: false
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      icon: ''
+      view_mode: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+    third_party_settings: {  }
+    type: slick_image
+    region: content
+  field_key_features:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_marketed_by:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_s:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_seller:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_unit:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: physical_measurement_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_brand: true
+  field_categories: true
+  stores: true
+  uid: true

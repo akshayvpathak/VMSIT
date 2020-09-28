@@ -15,11 +15,10 @@ dependencies:
     - field.field.commerce_product.rice.field_s
     - field.field.commerce_product.rice.field_seller
     - field.field.commerce_product.rice.field_unit
-    - image.style.product
   module:
     - commerce_product
+    - entity_reference_revisions
     - physical
-    - slick
     - text
 id: commerce_product.rice.default
 targetEntityType: commerce_product
@@ -48,59 +47,13 @@ content:
     type: text_default
     region: content
   field_images:
+    type: entity_reference_revisions_entity_view
     weight: 10
-    label: above
+    label: hidden
     settings:
-      style: column
-      optionset: default
-      optionset_thumbnail: ''
-      skin: classic
-      skin_thumbnail: ''
-      image_style: product
-      thumbnail_effect: ''
-      thumbnail_position: ''
-      media_switch: colorbox
-      background: true
-      box_style: product
-      thumbnail_style: ''
-      ratio: ''
-      box_caption: ''
-      box_caption_custom: ''
-      grid: null
-      grid_medium: null
-      grid_small: null
-      visible_items: null
-      layout: ''
-      thumbnail_caption: ''
-      cache: 0
-      override: true
-      overridables:
-        arrows: arrows
-        autoplay: autoplay
-        dots: dots
-        infinite: infinite
-        draggable: '0'
-        mouseWheel: '0'
-        randomize: '0'
-        variableWidth: '0'
-      current_view_mode: default
-      caption:
-        title: '0'
-        alt: '0'
-      preserve_keys: false
-      skin_arrows: ''
-      skin_dots: ''
-      fx: ''
-      icon: ''
-      view_mode: ''
-      box_media_style: ''
-      responsive_image_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: slick_image
     region: content
   field_key_features:
     weight: 3
@@ -157,5 +110,6 @@ hidden:
   created: true
   field_brand: true
   field_categories: true
+  search_api_excerpt: true
   stores: true
   uid: true

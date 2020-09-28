@@ -1,0 +1,10 @@
+uuid: 689c3f53-82f7-494e-98b1-8048cc47c415
+langcode: en
+status: true
+dependencies: {  }
+id: slick_product_carousel
+label: 'Slick Product Carousel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

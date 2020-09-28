@@ -1,14 +1,14 @@
-name: VMSIT THEME
+name: VMSIT
 type: theme
-description: 'VMS not IT Clone Website theme'
+description: 'VMS Theme'
 core: 8.x
 core_version_requirement: ^8 || ^9
-base theme: bootstrap_barrio
+base theme: false
 
 libraries:
-  - vmsit/bootstrap_cdn
-  - vmsit/global-styling
-
+  - vmsit/bootstrap
+  - vmsit/font-awesome
+  - vmsit/base
 regions:
   top_header_left: 'Top header left'
   top_header_center: 'Top header center'
@@ -17,13 +17,6 @@ regions:
   header: 'Header'
   highlighted: 'Highlighted'
   title: 'Title'
-  # header: Header
-  # header_form: 'Header form'
-  # primary_menu: 'Primary menu'
-  # secondary_menu: 'Secondary menu'
-  # page_top: 'Page top'
-  # page_bottom: 'Page bottom'
-  # featured_top: 'Featured top'
   breadcrumb: 'Breadcrumb'
   content: 'Content'
   content_bottom: 'Content bottom'
@@ -38,14 +31,3 @@ regions:
   postscript_second: 'Postscript Second'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-
-  # footer_first: 'Footer first'
-  # footer_second: 'Footer second'
-  # footer_third: 'Footer third'
-  # footer_fourth: 'Footer fourth'
-  # footer_fifth: 'Footer fifth'
-
-# Information added by Drupal.org packaging script on 2020-08-20
-version: '5.1.2'
-project: 'bootstrap_barrio'
-datestamp: 1597889064

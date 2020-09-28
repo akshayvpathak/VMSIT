@@ -1,0 +1,23 @@
+uuid: 9af15294-7986-498e-a559-207f999000a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - views
+  theme:
+    - vmsit
+id: product_search_block
+theme: vmsit
+region: top_header_center
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:categories-page_1'
+settings:
+  id: 'views_exposed_filter_block:categories-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

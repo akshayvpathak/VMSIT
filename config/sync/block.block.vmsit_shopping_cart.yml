@@ -10,8 +10,8 @@ _core:
   default_config_hash: orSxR8gn7umdR1c6gwf974l_423iO55PL0tkHpOWRhw
 id: vmsit_shopping_cart
 theme: vmsit
-region: top_header_right
-weight: -4
+region: top_header_left
+weight: -5
 provider: null
 plugin: commerce_cart
 settings:

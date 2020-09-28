@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_ad_baner
+    - field.field.node.page.field_category_carousel
     - node.type.page
   module:
     - text
@@ -27,4 +29,7 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_ad_baner: true
+  field_category_carousel: true
+  search_api_excerpt: true

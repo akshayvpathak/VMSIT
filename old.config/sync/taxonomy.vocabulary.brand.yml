@@ -1,0 +1,8 @@
+uuid: 535a5c7b-2fc5-4dca-88d5-c9756ad1a137
+langcode: en
+status: true
+dependencies: {  }
+name: Brand
+vid: brand
+description: 'Brand for the Product'
+weight: 0

@@ -1,0 +1,25 @@
+uuid: 987a3d4e-054b-4d7e-9d41-77b5a1a88c4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vmsit
+_core:
+  default_config_hash: ZuTeLM6v6-OKUtrY__rhDL0JEJvahVG2Zdgqbg20E3I
+id: vmsit_branding
+theme: vmsit
+region: header
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 9042e32a-395d-4aae-b61c-834b40e2b80e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_product_carousel.field_slick_product_images
+    - paragraphs.paragraphs_type.slick_product_carousel
+  module:
+    - media_library
+id: paragraph.slick_product_carousel.default
+targetEntityType: paragraph
+bundle: slick_product_carousel
+mode: default
+content:
+  field_slick_product_images:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  status: true

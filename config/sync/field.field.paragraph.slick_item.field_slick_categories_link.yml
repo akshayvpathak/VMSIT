@@ -1,0 +1,23 @@
+uuid: 92255ac1-cca6-4018-897e-0ff20bcb5cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slick_categories_link
+    - paragraphs.paragraphs_type.slick_item
+  module:
+    - link
+id: paragraph.slick_item.field_slick_categories_link
+field_name: field_slick_categories_link
+entity_type: paragraph
+bundle: slick_item
+label: 'slick categories link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,23 @@
+uuid: 893c06c4-8d8b-435a-b8a6-5067ebe0a641
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_product_carousel.field_slick_product_images
+    - paragraphs.paragraphs_type.slick_product_carousel
+id: paragraph.slick_product_carousel.default
+targetEntityType: paragraph
+bundle: slick_product_carousel
+mode: default
+content:
+  field_slick_product_images:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

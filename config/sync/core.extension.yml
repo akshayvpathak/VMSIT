@@ -57,8 +57,8 @@ module:
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
   link: 0
-  mailsystem: 0
   media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -77,7 +77,6 @@ module:
   slick: 0
   slick_ui: 0
   state_machine: 0
-  swiftmailer: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -86,10 +85,9 @@ module:
   tour: 0
   update: 0
   user: 0
-  views_autocomplete_filters: 0
   views_bootstrap: 0
+  views_taxonomy_term_name_into_id: 0
   views_ui: 0
-  viewsreference: 0
   pathauto: 1
   views: 10
   paragraphs: 11

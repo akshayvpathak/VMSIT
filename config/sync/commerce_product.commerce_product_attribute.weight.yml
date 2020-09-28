@@ -4,4 +4,4 @@ status: true
 dependencies: {  }
 id: weight
 label: 'Available in:'
-elementType: select
+elementType: commerce_product_rendered_attribute

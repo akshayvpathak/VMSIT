@@ -1,0 +1,28 @@
+uuid: f6d599c8-b3f8-4340-9d4d-79929aece9b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slick_product_images
+    - media.type.image
+    - paragraphs.paragraphs_type.slick_product_carousel
+id: paragraph.slick_product_carousel.field_slick_product_images
+field_name: field_slick_product_images
+entity_type: paragraph
+bundle: slick_product_carousel
+label: 'Slick Product images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

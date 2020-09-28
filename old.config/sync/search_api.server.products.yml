@@ -1,0 +1,17 @@
+uuid: b0f213ed-6a39-4f2d-b2ac-76e390f21033
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: products
+name: Products
+description: 'This is the Server for Basic Product Search.'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: partial
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

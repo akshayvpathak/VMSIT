@@ -1,0 +1,28 @@
+uuid: 1898f559-8dcb-4819-ada0-926d31345dbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_baner_carousel
+    - media.type.image
+    - paragraphs.paragraphs_type.banner_carousel_1
+id: paragraph.banner_carousel_1.field_baner_carousel
+field_name: field_baner_carousel
+entity_type: paragraph
+bundle: banner_carousel_1
+label: 'baner carousel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

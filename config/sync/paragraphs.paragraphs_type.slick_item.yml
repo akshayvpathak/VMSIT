@@ -1,0 +1,10 @@
+uuid: 63e9ed09-e3db-4acf-bae0-dc12898a57fe
+langcode: en
+status: true
+dependencies: {  }
+id: slick_item
+label: 'Slick Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

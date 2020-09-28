@@ -1,0 +1,25 @@
+uuid: 0c8c8fda-2c42-4ea2-8461-234208188235
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_categories_carousel.field_field_item
+    - paragraphs.paragraphs_type.slick_categories_carousel
+  module:
+    - entity_reference_revisions
+id: paragraph.slick_categories_carousel.default
+targetEntityType: paragraph
+bundle: slick_categories_carousel
+mode: default
+content:
+  field_field_item:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

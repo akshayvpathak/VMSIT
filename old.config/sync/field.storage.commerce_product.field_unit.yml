@@ -1,0 +1,20 @@
+uuid: af0be30a-c8c9-4522-8474-1fb63892e01d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - physical
+id: commerce_product.field_unit
+field_name: field_unit
+entity_type: commerce_product
+type: physical_measurement
+settings:
+  measurement_type: weight
+module: physical
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

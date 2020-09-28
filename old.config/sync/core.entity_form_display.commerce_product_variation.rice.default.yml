@@ -1,0 +1,82 @@
+uuid: 571f3553-7ed7-4865-a2d8-1de7aac7124e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.rice
+    - field.field.commerce_product_variation.rice.attribute_weight
+    - field.field.commerce_product_variation.rice.field_discount_percentage
+    - field.field.commerce_product_variation.rice.field_image
+    - field.field.commerce_product_variation.rice.field_old_price
+    - field.field.commerce_product_variation.rice.field_weight
+    - image.style.thumbnail
+  module:
+    - commerce_price
+    - image
+    - text
+id: commerce_product_variation.rice.default
+targetEntityType: commerce_product_variation
+bundle: rice
+mode: default
+content:
+  attribute_weight:
+    type: options_select
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_discount_percentage:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_old_price:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  field_weight:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  price:
+    type: commerce_price_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  list_price: true
+  uid: true

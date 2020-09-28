@@ -1,0 +1,23 @@
+uuid: 0c79bc41-ce9c-4be3-9cbb-8f6ae36cdb22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_carousel_1.field_baner_carousel
+    - paragraphs.paragraphs_type.banner_carousel_1
+id: paragraph.banner_carousel_1.default
+targetEntityType: paragraph
+bundle: banner_carousel_1
+mode: default
+content:
+  field_baner_carousel:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

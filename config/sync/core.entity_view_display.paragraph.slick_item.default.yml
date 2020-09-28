@@ -1,0 +1,38 @@
+uuid: 64911551-fbac-4782-a25d-4f98010ee3d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_item.field_slick_categories_link
+    - field.field.paragraph.slick_item.field_slick_images_categories
+    - paragraphs.paragraphs_type.slick_item
+  module:
+    - link
+id: paragraph.slick_item.default
+targetEntityType: paragraph
+bundle: slick_item
+mode: default
+content:
+  field_slick_categories_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_slick_images_categories:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

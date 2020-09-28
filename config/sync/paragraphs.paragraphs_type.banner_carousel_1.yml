@@ -1,0 +1,10 @@
+uuid: 2c452cee-bd0f-45aa-b655-5e5c42756548
+langcode: en
+status: true
+dependencies: {  }
+id: banner_carousel_1
+label: 'Banner Carousel-1'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

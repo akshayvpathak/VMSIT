@@ -1,0 +1,36 @@
+uuid: 0d5ec119-8808-4076-8809-ba5ecd0ad39f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_field_item
+    - paragraphs.paragraphs_type.slick_categories_carousel
+  module:
+    - entity_reference_revisions
+id: paragraph.slick_categories_carousel.field_field_item
+field_name: field_field_item
+entity_type: paragraph
+bundle: slick_categories_carousel
+label: 'Field Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slick_categories_carousel: slick_categories_carousel
+    target_bundles_drag_drop:
+      slick_categories_carousel:
+        enabled: true
+        weight: 4
+      slick_item:
+        weight: 5
+        enabled: false
+      slick_product_carousel:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

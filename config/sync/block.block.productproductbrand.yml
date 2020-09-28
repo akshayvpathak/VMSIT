@@ -1,6 +1,6 @@
 uuid: 197cb1f2-950a-4069-b7da-5c34d70dbc13
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.product_product_brand
@@ -10,8 +10,8 @@ dependencies:
     - vmsit
 id: productproductbrand
 theme: vmsit
-region: footer_fourth
-weight: 0
+region: top_header_left
+weight: -3
 provider: null
 plugin: 'facet_block:product_product_brand'
 settings:

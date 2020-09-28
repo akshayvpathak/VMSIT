@@ -1,0 +1,10 @@
+uuid: 2098faec-7509-45d5-ade6-ea5768c7a3b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.views_categories
+label: 'views categories'
+targetEntityType: commerce_product_variation
+cache: true

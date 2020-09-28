@@ -1,0 +1,61 @@
+uuid: 87aee3f9-01fb-4a60-9f65-dd3edca1eea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.field_brand
+    - field.storage.commerce_product.field_categories
+    - search_api.server.products
+  module:
+    - commerce_product
+    - search_api
+id: products
+name: Products
+description: 'this the Product index Provided by Drupal.'
+read_only: false
+field_settings:
+  field_brand:
+    label: 'Product » Product » Brand'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:field_brand'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+      module:
+        - commerce_product
+  field_categories:
+    label: 'Product » Product » Categories'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:field_categories'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_categories
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product_variation':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  hierarchy:
+    fields:
+      field_categories: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: products

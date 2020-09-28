@@ -1,0 +1,29 @@
+uuid: 6b63ac76-a3d9-49e0-bd91-53ac61b46c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_categories_carousel.field_field_item
+    - paragraphs.paragraphs_type.slick_categories_carousel
+  module:
+    - paragraphs
+id: paragraph.slick_categories_carousel.default
+targetEntityType: paragraph
+bundle: slick_categories_carousel
+mode: default
+content:
+  field_field_item:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

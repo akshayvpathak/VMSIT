@@ -1,0 +1,27 @@
+uuid: 842d0fea-6629-4cea-84c0-61925bb5ad23
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: mmcopYofUmb3PLb10rD6utbPoo6_zpxaX4yf3i4xmH8
+id: bootstrap_barrio_page_title
+theme: bootstrap_barrio
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/product/*\r\n/products*"
+    negate: true
+    context_mapping: {  }

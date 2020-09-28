@@ -1,6 +1,6 @@
 uuid: 77a1e583-9ab2-4f21-99d0-aee6c2930628
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.footer_block
@@ -10,8 +10,8 @@ dependencies:
     - vmsit
 id: footerblock
 theme: vmsit
-region: footer_first
-weight: 0
+region: top_header_left
+weight: -2
 provider: null
 plugin: 'facet_block:footer_block'
 settings:

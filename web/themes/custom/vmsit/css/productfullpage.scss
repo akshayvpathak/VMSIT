@@ -1,0 +1,136 @@
+$offertext: #51AA1B;
+$extrahighlightedtextDesk: 24px;
+$highlightedtextDesk : 18px;
+$normaltextDesk: 16px;
+$smalltextDesk: 14px;
+$extrasmalltextDesk: 12px;
+$highlightedweightDesk: 580;
+$redborder : #E96125;
+$darkcharcoal: #333333;
+$dimgray: #666666;
+$darkgray: #999999;
+$brightblue: #37A3BE;
+@mixin zero-margin($pad-up-dn,$pad-left-right) {
+  margin: 0px auto;
+  padding: $pad-up-dn $pad-left-right;
+}
+@mixin fontsize($fontsize,$fontweight) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+}
+.commerce-product--full{
+  .offer-text{
+    display: inline-block;
+    background-color: $offertext;
+    color: #fff;
+    border: 1px solid $offertext;
+    @include zero-margin(4px, 8px);
+    text-align: center;
+    @include fontsize($highlightedtextDesk,$highlightedweightDesk );
+  }
+  .product-name{
+    @include fontsize($highlightedtextDesk,$highlightedweightDesk );
+    color: $darkcharcoal;
+    margin: 4px 0px 4px 0px;
+  }
+  .product-mrp{
+    color: $darkgray;
+    font-size: $normaltextDesk;
+    .product-old-price{
+      display: inline;
+      color: $dimgray;
+      padding-left: 6px;
+      div{
+      display: inline;
+      }   
+    }    
+  }
+  .selling-mrp{
+    font-size: $normaltextDesk;
+    color: $darkcharcoal;
+    .product-price{
+      display: inline;
+      padding-left: 6px;
+      @include fontsize($extrahighlightedtextDesk,$highlightedweightDesk);
+      div{
+      display: inline;
+      }
+    }
+  }
+  .tax-text{
+    font-size: $extrasmalltextDesk;
+    color: $darkgray;
+  }
+  .available-variations{
+    .product--rendered-attribute label.option{
+      border: 1px solid $darkcharcoal;
+      border-radius: 3px;
+      padding: 8px 12px 8px 12px ;
+      margin: 12px 16px 12px 0;
+      font-size: $normaltextDesk;
+    }
+    .product--rendered-attribute__selected ~ label.option{
+      border: 1px solid $redborder;
+      border-radius: 3px;
+      color: $redborder;
+      font-size: $normaltextDesk;
+    }
+    legend{
+      margin: 0 auto;
+      font-size: $smalltextDesk;
+      color: $dimgray;
+    }
+  }
+  .button--add-to-cart{
+    background-color: $redborder;
+    border: 1px solid $redborder;
+    border-radius: 3px;
+    color: #fff;
+    font-size: $smalltextDesk;
+    text-align: center;
+    padding: 12px 32px;
+  }
+  .product-detail{
+    .product-detail-title{
+      color: $darkcharcoal;
+      @include fontsize($highlightedtextDesk,$highlightedweightDesk );
+      padding: 16px 0 10px 0;
+    }
+    .field__label{
+      color: $darkcharcoal;
+      @include fontsize($smalltextDesk,$highlightedweightDesk);
+
+    }
+    .field__item{
+      color: $dimgray;
+      @include fontsize($smalltextDesk,200);
+    }
+    .viewless, .viewmore{
+      color: $redborder; 
+      font-size: $normaltextDesk;
+      text-align: center;
+      &:hover ,&:focus{
+        color: $redborder; 
+      }
+    }
+  }
+    .promise-title{
+      @include fontsize($normaltextDesk,$highlightedweightDesk);
+      color: $brightblue;
+      .promise-text{
+        color: $darkcharcoal;
+        font-size: $smalltextDesk;
+      }
+    }
+    .promise{
+      .promise-header{
+        color: $darkcharcoal;
+        @include fontsize($highlightedtextDesk,$highlightedweightDesk );
+      }
+      img{
+        height: 34px;
+        width: 34px;
+      }
+    }
+    
+}

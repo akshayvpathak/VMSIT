@@ -1,0 +1,22 @@
+uuid: 881ccf01-83e7-4a3d-a4b5-4fdf7e05564d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vmsit
+_core:
+  default_config_hash: uxiZlSldLtoOp05pfXeKJxxtvB0ckxx3mAAabJdAJnU
+id: vmsit_messages
+theme: vmsit
+region: highlighted
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

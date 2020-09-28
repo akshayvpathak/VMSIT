@@ -5,26 +5,19 @@ dependencies:
   config:
     - commerce_product.commerce_product_attribute.weight
     - field.field.commerce_product_attribute_value.weight.field_available_in
-  module:
-    - physical
 id: commerce_product_attribute_value.weight.default
 targetEntityType: commerce_product_attribute_value
 bundle: weight
 mode: default
 content:
-  field_available_in:
-    weight: -4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: physical_measurement_default
-    region: content
   name:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_available_in: true
+  search_api_excerpt: true

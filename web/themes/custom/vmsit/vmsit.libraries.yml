@@ -1,32 +1,46 @@
-global-styling:
-  version: VERSION
-  js:
-    js/global.js: {}
-  css:
-    component:
-      css/style.css: {}
-      css/colors.css: {}
-      font-awesome/css/font-awesome.min.css: {}
 bootstrap:
+  version: 4.0.0
   js:
-    /libraries/popper.js/dist/umd/popper.min.js: {}
-    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
-  css:
-    component:
-      /libraries/bootstrap/dist/css/bootstrap.min.css: {}
-bootstrap_cdn:
-  js:
-    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
-    //stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js: {}
-  css:
-    component:
-      //stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css: {}
-color.preview:
-  version: VERSION
+    vendor/bootstrap/js/bootstrap.bundle.min.js: {}
+  dependencies:
+    - core/jquery
   css:
     theme:
-      color/preview.css: {}
+      vendor/bootstrap/css/bootstrap.min.css: {}
+
+font-awesome:
+  version: 4.7.0
+  css:
+    theme:
+      vendor/font-awesome/css/font-awesome.min.css: {}
+base:
+  version: VERSION
   js:
-    color/preview.js: {}
+    js/scripts.js: {}
   dependencies:
-    - color/drupal.color
+    - core/jquery
+  css:
+    theme:
+      css/styles.css: {}
+  
+slickfrontpage:
+  version: 1.8.1
+  js:
+    vendor/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      css/slickfrontpage.css: {}
+      #vendor/slick/slick-theme.css: {}
+
+slickproduct:
+  version: 1.8.1
+  js:
+    vendor/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      css/slick.css: {}
+      #vendor/slick/slick-theme.css: {}

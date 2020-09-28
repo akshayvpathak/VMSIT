@@ -1,0 +1,24 @@
+uuid: 9ef38907-e42e-4a46-80e5-687b52c06764
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.weight
+    - commerce_product.commerce_product_variation_type.rice
+    - field.storage.commerce_product_variation.attribute_weight
+id: commerce_product_variation.rice.attribute_weight
+field_name: attribute_weight
+entity_type: commerce_product_variation
+bundle: rice
+label: weight
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - weight
+field_type: entity_reference

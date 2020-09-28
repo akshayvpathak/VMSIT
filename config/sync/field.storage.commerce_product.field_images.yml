@@ -1,27 +1,18 @@
-uuid: decf8143-f47f-4066-b2ef-5c14707979d0
+uuid: 21d9adf9-9e0e-43b1-9c95-97e7f395e0a0
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
-    - file
-    - image
+    - entity_reference_revisions
+    - paragraphs
 id: commerce_product.field_images
 field_name: field_images
 entity_type: commerce_product
-type: image
+type: entity_reference_revisions
 settings:
-  uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  target_type: file
-  display_field: false
-  display_default: false
-module: image
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
 cardinality: -1
 translatable: true

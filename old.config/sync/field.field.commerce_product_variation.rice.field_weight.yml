@@ -1,0 +1,21 @@
+uuid: 83849b73-988e-41fc-b91a-de9aad066322
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.rice
+    - field.storage.commerce_product_variation.field_weight
+  module:
+    - text
+id: commerce_product_variation.rice.field_weight
+field_name: field_weight
+entity_type: commerce_product_variation
+bundle: rice
+label: weight
+description: 'this is weight field used in Product catalog.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
